@@ -9,7 +9,7 @@ function Home() {
       <p>Check out my projects and resume:</p>
       <ul>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects">I added this in main branch Projects</Link>
         </li>
         <li>
           <Link to="/resume">Resume</Link>
