@@ -29,9 +29,9 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Resume from './pages/Resume';
+import Home from './Components/pages/Home';
+import Projects from './Components/pages/Projects';
+import Resume from './Components/pages/Resume';
 
 function App() {
   return (
