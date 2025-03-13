@@ -28,7 +28,7 @@
 
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // add back Link
 import Home from './Components/pages/Home';
 import Projects from './Components/pages/Projects';
 import Resume from './Components/pages/Resume';
@@ -38,7 +38,7 @@ function App() {
     <Router>
       <div>
         <nav>
-          <ul>
+          {/* <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -48,7 +48,7 @@ function App() {
             <li>
               <Link to="/resume">Resume</Link>
             </li>
-          </ul>
+          </ul> */}
         </nav>
 
         <Routes>
@@ -62,5 +62,3 @@ function App() {
 }
 
 export default App;
-
-
