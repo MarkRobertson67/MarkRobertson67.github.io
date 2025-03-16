@@ -1,0 +1,21 @@
+
+/* notFound.module.css */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100% of the viewport height */
+  text-align: center;
+}
+  
+  .not-found-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .not-found-message {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

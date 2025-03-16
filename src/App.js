@@ -29,36 +29,26 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // add back Link
-import Home from './Components/pages/Home';
-import Projects from './Components/pages/Projects';
-import Resume from './Components/pages/Resume';
+import Home from './Components/pages/home/Home';
+import Projects from './Components/pages/projects/Projects';
+import Resume from './Components/pages/resume/Resume';
+import NotFound from './Components/pages/notfound/notFound'
 
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          {/* <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-          </ul> */}
-        </nav>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
+
+          {/* Catch all route for non-existant paths */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
     </Router>
   );
 }
 
 export default App;
+
+// To update gh-pages for auto redeploy, "npm run deploy"
