@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./mycomponents/layout/Layout";
+import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import Resume from "./pages/resume/Resume";
 import AboutMe from "./pages/aboutme/AboutMe";
 import Recommendations from "./pages/recommendations/Recommendations";
-import ContactMe from "./pages/contactmemodal/ContactMeModal";
+import ContactMe from "./pages/contactme/ContactMe";
 import NotFound from "./pages/notfound/NotFound";
 
 function App() {
