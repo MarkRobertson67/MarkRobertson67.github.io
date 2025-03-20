@@ -1,50 +1,29 @@
-
-// import logo from './logo.svg';
-// import './App.css';
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Hello Worldly Laptop
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-// export default App;
-
-
-
-
-
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // add back Link
-import Home from './Components/pages/home/Home';
-import Projects from './Components/pages/projects/Projects';
-import Resume from './Components/pages/resume/Resume';
-import NotFound from './Components/pages/notfound/notFound'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./mycomponents/layout/Layout";
+import Home from "./pages/home/Home";
+import Projects from "./pages/projects/Projects";
+import Resume from "./pages/resume/Resume";
+import AboutMe from "./pages/aboutme/AboutMe";
+import Recommendations from "./pages/recommendations/Recommendations";
+import ContactMe from "./pages/contactmemodal/ContactMeModal";
+import NotFound from "./pages/notfound/NotFound";
 
 function App() {
   return (
     <Router>
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
-
-          {/* Catch all route for non-existant paths */}
+          <Route path="/recommendations" element={<Recommendations />} />
+          <Route path="/contact" element={<ContactMe />} />
+          {/* Catch-all for 404 pages */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+      </Layout>
     </Router>
   );
 }
