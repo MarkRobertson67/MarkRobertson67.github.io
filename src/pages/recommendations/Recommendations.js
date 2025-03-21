@@ -14,7 +14,7 @@ function Recommendations() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6 md:p-10">
+    <div className="min-h-[calc(100vh-8rem)] bg-gray-50 p-6 md:p-10">
       <h2 className="text-3xl font-bold mb-6">Recommendations</h2>
       <div className="space-y-6">
         {testimonials.map((testi, index) => (
