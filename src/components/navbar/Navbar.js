@@ -7,8 +7,21 @@ function Navbar() {
 
   return (
     <>
-      {/* Desktop Sidebar */}
-      <nav className="hidden md:flex fixed top-0 left-0 h-full w-60 bg-blue-600 text-white px-6 py-8 flex-col space-y-6 shadow-lg font-fredoka">
+      {/* Desktop Sidebar (fully transparent) */}
+      <nav
+        className="
+          hidden md:flex
+          fixed top-0 left-0
+          h-full w-60
+          bg-transparent
+          border-r-2 border-dotted border-white
+          text-orange-500
+          px-6 py-8
+          flex-col space-y-6
+          shadow-lg
+          font-fredoka
+        "
+      >
         <h2 className="text-2xl font-bold mb-4">Mark Robertson</h2>
         <ul className="space-y-4 text-lg">
           <li><Link to="/">Home</Link></li>
@@ -20,17 +33,47 @@ function Navbar() {
         </ul>
       </nav>
 
-      {/* Mobile Navbar (top bar) */}
-      <div className="md:hidden fixed top-0 left-0 w-full bg-blue-600 text-white px-6 py-4 flex justify-between items-center shadow-lg font-fredoka">
+      {/* Mobile Navbar (top bar, fully transparent) */}
+      <div
+        className="
+          md:hidden
+          fixed top-0 left-0
+          w-full
+          bg-transparent
+          border-b-2 border-dotted border-white
+          text-orange-500
+          px-6 py-4
+          flex justify-between items-center
+          shadow-lg
+          font-fredoka
+        "
+      >
         <h2 className="text-xl font-bold">Mark Robertson</h2>
-        <button onClick={() => setIsOpen(!isOpen)} className="text-white text-2xl">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-orange-500 text-2xl"
+        >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
 
-      {/* Mobile Menu (slide-down) */}
+      {/* Mobile Menu (slide-down, fully transparent) */}
       {isOpen && (
-        <div className="md:hidden fixed top-14 left-0 w-full bg-blue-700 text-white p-6 flex flex-col space-y-4 shadow-lg z-50 font-fredoka">
+        <div
+          className="
+            md:hidden
+            fixed top-14 left-0
+            w-full
+            bg-transparent
+            border-b-2 border-dotted border-white
+            text-orange-500
+            p-6
+            flex flex-col space-y-4
+            shadow-lg
+            z-50
+            font-fredoka
+          "
+        >
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About Me</Link>
           <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
@@ -44,3 +87,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
