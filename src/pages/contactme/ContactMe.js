@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 function ContactMe() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -12,10 +13,43 @@ function ContactMe() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., send to email or backend)
-    alert("Thank you for contacting me!");
-    setFormData({ name: "", email: "", message: "" });
+  
+    // Send the contact alert email (to you)
+    emailjs.send(
+      "service_3kpodrr",
+      "template_7rmosy9",
+      formData,
+      "Nvoo2xgtKqLWexhFd"
+    )
+    .then(
+      (response) => {
+        console.log("Contact alert email sent!", response.status, response.text);
+        // After sending the alert, send the auto-reply email
+        emailjs.send(
+          "service_3kpodrr",
+          "template_np119zb",
+          formData,
+          "Nvoo2xgtKqLWexhFd"
+        )
+        .then(
+          (response) => {
+            console.log("Auto-reply email sent!", response.status, response.text);
+            alert("Thank you for contacting me!");
+            setFormData({ name: "", email: "", message: "" });
+          },
+          (err) => {
+            console.error("Auto-reply FAILED...", err);
+            alert("There was an error sending the auto-reply. Please try again.");
+          }
+        );
+      },
+      (err) => {
+        console.error("Contact alert FAILED...", err);
+        alert("There was an error sending your message. Please try again.");
+      }
+    );
   };
+  
 
   return (
     <div className="min-h-[calc(100vh-8rem)] bg-gray-100 p-6 md:p-10 flex flex-col items-center">
@@ -69,3 +103,4 @@ function ContactMe() {
 }
 
 export default ContactMe;
+
