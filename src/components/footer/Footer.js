@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import ico
 
 function Footer() {
   return (
-    <footer className="bg-gray-600 text-white text-center py-4 mt-auto">
+    <footer className="bg-gray-600 text-white text-center py-4">
       <p className="text-sm">&copy; {new Date().getFullYear()} Mark Robertson. All rights reserved.</p>
 
       {/* Social Media & Email Icons */}
