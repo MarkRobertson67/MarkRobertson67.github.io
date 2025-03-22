@@ -10,7 +10,7 @@ function Home() {
         This is my fun and creative space on the web. Explore my Projects,
         check out Recommendations, or get in touch on the Contact page.
       </p>
-      
+      <p className="text-lg md:text-2xl max-w-2xl text-center"> I need to add something fun to do on the main page </p>
       {/* Under Construction Section */}
       <div className="mt-8 flex flex-col items-center">
         <p className="text-xl font-bold mb-2">Site Under Construction</p>
