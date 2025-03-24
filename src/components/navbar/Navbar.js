@@ -33,13 +33,13 @@ function Navbar() {
         </ul>
       </nav>
 
-      {/* Mobile Navbar (top bar, fully transparent) */}
+      {/* Mobile Navbar (top bar) */}
       <div
         className="
           md:hidden
           fixed top-0 left-0
           w-full
-          bg-transparent
+          bg-gray-600
           border-b-2 border-dotted border-white
           text-orange-500
           px-6 py-4
@@ -70,7 +70,7 @@ function Navbar() {
             p-6
             flex flex-col space-y-4
             shadow-lg
-            z-50
+            z-[1000]
             font-fredoka
           "
         >

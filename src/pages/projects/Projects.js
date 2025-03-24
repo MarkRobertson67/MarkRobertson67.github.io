@@ -3,6 +3,7 @@ import ProjectCard from "../../components/projectcard/ProjectCard";
 import citywhispererPic from "../../images/citywhispererpic.png";
 import citywhispererVideo from "../../images/citywhispererclip.mp4";
 import timecardappPic from "../../images/timecardapp.png";
+import timecardvideo from "../../images/timecardclip.mp4"
 
 const projects = [
   {
@@ -18,9 +19,8 @@ const projects = [
     description:
       "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (Video coming soon!)",
     screenshot: timecardappPic,
-    // For now, we use the static image as a placeholder for the video.
-    video: timecardappPic,
-    website: "https://example.com/timecardapp", // Replace with your actual URL when ready
+    video: timecardvideo,
+    website: "https://example.com/timecardapp", // Replace with actual URL when ready
   },
   // Add more projects here if needed...
 ];
