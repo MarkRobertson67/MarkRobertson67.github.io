@@ -57,14 +57,14 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu (slide-down, fully transparent) */}
+      {/* Mobile Menu (slide-down, white bg) */}
       {isOpen && (
         <div
           className="
             md:hidden
             fixed top-14 left-0
             w-full
-            bg-transparent
+            bg-white
             border-b-2 border-dotted border-white
             text-orange-500
             p-6

@@ -52,7 +52,7 @@ function ContactMe() {
   
 
   return (
-    <div className="min-h-[calc(100vh-8rem)] bg-gray-100 p-6 md:p-10 flex flex-col items-center">
+    <div className="min-h-[calc(100vh-15rem)] bg-gray-100 p-6 md:p-10 flex flex-col items-center">
       <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
       <form
         onSubmit={handleSubmit}
