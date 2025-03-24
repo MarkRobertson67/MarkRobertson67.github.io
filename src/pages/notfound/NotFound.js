@@ -1,5 +1,4 @@
 import React from "react";
-import NotFoundImage from "../../images/404.jpeg";
 import NotFoundClip from "../../images/ErrorNotFound.mp4";
 import { useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
