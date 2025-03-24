@@ -22,7 +22,9 @@ function Navbar() {
           font-fredoka
         "
       >
-        <h2 className="text-2xl font-bold mb-4">Mark Robertson</h2>
+        <h2 className="text-2xl font-bold mb-4">
+          <Link to="/">Mark Robertson</Link>
+          </h2>
         <ul className="space-y-4 text-lg">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Me</Link></li>
@@ -48,7 +50,11 @@ function Navbar() {
           font-fredoka
         "
       >
-        <h2 className="text-xl font-bold">Mark Robertson</h2>
+        <h2 className="text-xl font-bold">
+        <Link to="/" className="block">
+            Mark Robertson
+          </Link>
+          </h2>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-orange-500 text-2xl"

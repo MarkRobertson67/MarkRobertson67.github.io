@@ -7,6 +7,14 @@ import timecardvideo from "../../images/timecardclip.mp4"
 
 const projects = [
   {
+    title: "TimeCardApp",
+    description:
+      "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (App Link coming soon!)",
+    screenshot: timecardappPic,
+    video: timecardvideo,
+    website: "https://example.com/timecardapp", // Replace with actual URL when ready
+  },
+  {
     title: "CityWhisperer",
     description:
       "An immersive experience blending real-time data with urban life. Explore interactive maps, live data feeds, and a unique take on city dynamics.",
@@ -14,14 +22,7 @@ const projects = [
     video: citywhispererVideo,
     website: "https://citywhisperer-mark.netlify.app/",
   },
-  {
-    title: "TimeCardApp",
-    description:
-      "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (Video coming soon!)",
-    screenshot: timecardappPic,
-    video: timecardvideo,
-    website: "https://example.com/timecardapp", // Replace with actual URL when ready
-  },
+
   // Add more projects here if needed...
 ];
 
