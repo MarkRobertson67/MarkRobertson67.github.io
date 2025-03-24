@@ -24,14 +24,26 @@ function Navbar() {
       >
         <h2 className="text-2xl font-bold mb-4">
           <Link to="/">Mark Robertson</Link>
-          </h2>
+        </h2>
         <ul className="space-y-4 text-lg">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-          <li><Link to="/recommendations">Recommendations</Link></li>
-          <li><Link to="/contact">Contact Me</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link to="/recommendations">Recommendations</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Me</Link>
+          </li>
         </ul>
       </nav>
 
@@ -50,11 +62,12 @@ function Navbar() {
           font-fredoka
         "
       >
-        <h2 className="text-xl font-bold">
-        <Link to="/" className="block">
+        <h2 className="text-xl font-bold z-10">
+          <Link to="/" className="block" onClick={() => setIsOpen(false)}>
             Mark Robertson
           </Link>
-          </h2>
+        </h2>
+
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-orange-500 text-2xl"
@@ -80,12 +93,24 @@ function Navbar() {
             font-fredoka
           "
         >
-          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}>About Me</Link>
-          <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
-          <Link to="/resume" onClick={() => setIsOpen(false)}>Resume</Link>
-          <Link to="/recommendations" onClick={() => setIsOpen(false)}>Recommendations</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Me</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
+            About Me
+          </Link>
+          <Link to="/projects" onClick={() => setIsOpen(false)}>
+            Projects
+          </Link>
+          <Link to="/resume" onClick={() => setIsOpen(false)}>
+            Resume
+          </Link>
+          <Link to="/recommendations" onClick={() => setIsOpen(false)}>
+            Recommendations
+          </Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
+            Contact Me
+          </Link>
         </div>
       )}
     </>

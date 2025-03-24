@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
       onMouseLeave={handleMouseLeave}
     >
       {/* Use an aspect ratio container to maintain a consistent display */}
-      <div className="relative aspect-video">
+      <div className="relative aspect-video z-0">
         {isHovered && project.video.endsWith(".mp4") && !videoEnded ? (
           <video
             ref={videoRef}
@@ -56,7 +56,7 @@ function ProjectCard({ project }) {
           <img
             src={project.screenshot}
             alt={project.title}
-            className="w-full h-full object-contain transition-all duration-300"
+            className="z-0 w-full h-full object-contain transition-all duration-300"
           />
         )}
       </div>

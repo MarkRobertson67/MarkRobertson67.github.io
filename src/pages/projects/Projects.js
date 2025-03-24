@@ -12,7 +12,15 @@ const projects = [
       "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (App Link coming soon!)",
     screenshot: timecardappPic,
     video: timecardvideo,
-    website: "https://example.com/timecardapp", // Replace with actual URL when ready
+    website: "https://example.com/timecardapp", // Replace with my actual URL when ready
+  },
+  {
+    title: "CityWhisperer",
+    description:
+      "An immersive experience blending real-time data with urban life. Explore interactive maps, live data feeds, and a unique take on city dynamics.",
+    screenshot: citywhispererPic,
+    video: citywhispererVideo,
+    website: "https://citywhisperer-mark.netlify.app/",
   },
   {
     title: "CityWhisperer",
