@@ -3,11 +3,13 @@ import ProjectCard from "../../components/projectcard/ProjectCard";
 import citywhispererPic from "../../images/citywhispererpic.png";
 import citywhispererVideo from "../../images/citywhispererclip.mp4";
 import timecardappPic from "../../images/timecardapp.png";
-import timecardvideo from "../../images/timecardclip.mp4"
+import timecardvideo from "../../images/timecardclip.mp4";
+import luxuryridesPic from "../../images/luxuryrides.png";
+import luxuryridesvideo from "../../images/luxuryridesclip.mp4"
 
 const projects = [
   {
-    title: "TimeCardApp",
+    title: "Time Card App",
     description:
       "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (App Link coming soon!)",
     screenshot: timecardappPic,
@@ -15,7 +17,7 @@ const projects = [
     website: "https://example.com/timecardapp", // Replace with my actual URL when ready
   },
   {
-    title: "CityWhisperer",
+    title: "City Whisperer",
     description:
       "An immersive experience blending real-time data with urban life. Explore interactive maps, live data feeds, and a unique take on city dynamics.",
     screenshot: citywhispererPic,
@@ -23,12 +25,12 @@ const projects = [
     website: "https://citywhisperer-mark.netlify.app/",
   },
   {
-    title: "CityWhisperer",
+    title: "My Luxury Rides",
     description:
-      "An immersive experience blending real-time data with urban life. Explore interactive maps, live data feeds, and a unique take on city dynamics.",
-    screenshot: citywhispererPic,
-    video: citywhispererVideo,
-    website: "https://citywhisperer-mark.netlify.app/",
+      "A full-stack app with a React front-end and robust RESTful back-end, showcasing a curated vehicle collection with CRUD and filtering features.",
+    screenshot: luxuryridesPic,
+    video: luxuryridesvideo,
+    website: "https://myluxuryrides.netlify.app/",
   },
 
   // Add more projects here if needed...
