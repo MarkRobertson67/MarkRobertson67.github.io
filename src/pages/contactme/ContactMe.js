@@ -16,7 +16,7 @@ function ContactMe() {
   
     // Send the contact alert email (to you)
     emailjs.send(
-      "service_3kpodrr",
+      "service_nmgxjq9",
       "template_7rmosy9",
       formData,
       "Nvoo2xgtKqLWexhFd"
@@ -26,7 +26,7 @@ function ContactMe() {
         console.log("Contact alert email sent!", response.status, response.text);
         // After sending the alert, send the auto-reply email
         emailjs.send(
-          "service_3kpodrr",
+          "service_nmgxjq9",
           "template_np119zb",
           formData,
           "Nvoo2xgtKqLWexhFd"
