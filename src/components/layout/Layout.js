@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
-import brushStroke from "../../images/serator_line.png";
+//import brushStroke from "../../images/serator_line.png";
 
 export default function Layout({ children }) {
   return (
@@ -10,13 +10,13 @@ export default function Layout({ children }) {
       <Navbar />
 
       {/* The vertical brush stroke, also positioned absolutely to the right of the navbar */}
-      <div className="hidden md:block fixed top-0 left-[14rem] h-screen z-10">
+      {/* <div className="hidden md:block fixed top-0 left-[14rem] h-screen z-10">
         <img
           src={brushStroke}
           alt="Vertical Brush Separator"
           className="h-full w-[30%] object-cover"
         />
-      </div>
+      </div> */}
 
       {/* Main container (offset by 15rem on desktop) */}
       <div

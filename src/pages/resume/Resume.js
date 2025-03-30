@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FiDownload, FiArrowLeft } from "react-icons/fi"; 
+import { FiArrowLeft } from "react-icons/fi"; 
 
 function Resume() {
   const navigate = useNavigate();
@@ -42,14 +42,7 @@ function Resume() {
         </object>
       </div>
 
-      {/* Download Button */}
-      <a
-        href={resumeUrl}
-        download
-        className="mt-6 px-6 py-2 flex items-center bg-green-500 text-white rounded shadow-lg hover:bg-green-600 transition duration-200 focus:outline-none"
-      >
-        <FiDownload className="mr-2" /> Download Resume
-      </a>
+      
     </div>
   );
 }

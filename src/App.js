@@ -8,6 +8,7 @@ import AboutMe from "./pages/aboutme/AboutMe";
 import Recommendations from "./pages/recommendations/Recommendations";
 import ContactMe from "./pages/contactme/ContactMe";
 import NotFound from "./pages/notfound/NotFound";
+// import TestPage from "./pages/TestPage"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="/contact" element={<ContactMe />} />
+          {/* <Route path="/testpage" element={<TestPage />} /> */}
           {/* Catch-all for 404 pages */}
           <Route path="*" element={<NotFound />} />
         </Routes>
