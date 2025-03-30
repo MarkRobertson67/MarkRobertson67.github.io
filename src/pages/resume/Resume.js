@@ -4,7 +4,7 @@ import { FiDownload, FiArrowLeft } from "react-icons/fi";
 
 function Resume() {
   const navigate = useNavigate();
-  const resumeUrl = "/Mark_Robertson_Resume_3-16-2025.pdf";
+  const resumeUrl = "/Mark_Robertson_Resume.pdf";
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
