@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons
+import { FaGithub, FaLinkedin, FaEnvelope, FaBriefcase } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -31,6 +31,13 @@ function Footer() {
           href="mailto:markrobertson67@gmail.com" 
         >
           <FaEnvelope size={30} color="#D44638" className="hover:opacity-80 transition duration-200" />
+        </a>
+
+        {/* Portfolio (Red) */}
+        <a 
+          href="https://markrobertson67.github.io/" 
+        >
+          <FaBriefcase size={30} color="#F97316" className="hover:opacity-80 transition duration-200" />
         </a>
       </div>
     </footer>
