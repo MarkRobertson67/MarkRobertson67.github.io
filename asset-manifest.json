@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4e89576.css",
-    "main.js": "/static/js/main.f6d837cc.js",
+    "main.css": "/static/css/main.40dc6628.css",
+    "main.js": "/static/js/main.1558384c.js",
     "static/media/luxuryridesclip.mp4": "/static/media/luxuryridesclip.5ba5e104e338b5812283.mp4",
     "static/media/citywhispererclip.mp4": "/static/media/citywhispererclip.8fa8411ed43a499f6193.mp4",
     "static/media/weatherappclip.mp4": "/static/media/weatherappclip.26dee10776ac436b5c08.mp4",
@@ -13,13 +13,12 @@
     "static/media/weatherapp.png": "/static/media/weatherapp.8668bdbc3856f473428a.png",
     "static/media/studentdashboard.png": "/static/media/studentdashboard.72e3a59b3d65263ff0ac.png",
     "static/media/ErrorNotFound.mp4": "/static/media/ErrorNotFound.59aecfead9ff8b7daf98.mp4",
-    "static/media/serator_line.png": "/static/media/serator_line.cf5381ec39490dac38cb.png",
     "index.html": "/index.html",
-    "main.a4e89576.css.map": "/static/css/main.a4e89576.css.map",
-    "main.f6d837cc.js.map": "/static/js/main.f6d837cc.js.map"
+    "main.40dc6628.css.map": "/static/css/main.40dc6628.css.map",
+    "main.1558384c.js.map": "/static/js/main.1558384c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4e89576.css",
-    "static/js/main.f6d837cc.js"
+    "static/css/main.40dc6628.css",
+    "static/js/main.1558384c.js"
   ]
 }
