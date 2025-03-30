@@ -17,9 +17,11 @@ function ProjectCard({ project }) {
   const handleMouseLeave = () => {
     setIsHovered(false);
     setVideoEnded(false);
-    if (videoRef.current) {
-      videoRef.current.pause();
-    }
+    setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+      }
+    }, 50);
   };
 
   const handleEnded = () => {
