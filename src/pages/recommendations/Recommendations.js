@@ -53,7 +53,7 @@ function Recommendations() {
     text.length > length ? text.substring(0, length) + "..." : text;
 
   return (
-    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-blue-50 to-gray-50 dark:from-gray-600 dark:to-gray-600 pt-6 px-6 pb-16 md:pt-10 md:px-10 md:pb-0">
+    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-blue-50 to-gray-50 dark:from-gray-600 dark:to-gray-600 pt-6 px-6 pb-20 md:pt-10 md:px-10 md:pb-0">
   <h2 className="text-3xl font-bold mb-8 text-center dark:text-gray-100">
     Recommendations
   </h2>
