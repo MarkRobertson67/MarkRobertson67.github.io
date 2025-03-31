@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="min-h-[calc(100vh-5rem)] dark:bg-gray-600 pt-8">
+    <div className="min-h-[calc(100vh-5rem)] dark:bg-gray-600 pt-8 pb-16">
       <div className="max-w-3xl mx-auto bg-white dark:bg-gray-700 p-8 rounded-xl shadow-2xl">
         <h1 className="text-center text-4xl font-bold text-gray-800 dark:text-white mb-6">
           About Me
