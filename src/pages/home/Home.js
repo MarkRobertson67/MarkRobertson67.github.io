@@ -11,22 +11,24 @@ function Home() {
       <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-bounce text-center">
         Mark Robertson's <br /> Portfolio Site
       </h1>
-      <p className="text-lg md:text-2xl max-w-2xl text-center">
-        Explore my Projects, check
-        out Recommendations, or get in touch with me.
-      </p>
-
-      {/* Under Construction Section */}
-      <div className="mt-8 flex flex-col items-center">
-        <p className="text-xl font-bold mb-2">Site Under Construction</p>
-        <img
-          src="https://www.fg-a.com/under-construction/under-construction-night.gif"
-          alt="Under Construction"
-          className="w-20 h-auto"
-        />
-      </div>
     </div>
   );
 }
 
 export default Home;
+
+
+// <p className="text-lg md:text-2xl max-w-2xl text-center">
+// Explore my Projects, check
+// out Recommendations, or get in touch with me.
+// </p>
+
+// {/* Under Construction Section */}
+// <div className="mt-8 flex flex-col items-center">
+// <p className="text-xl font-bold mb-2">Site Under Construction</p>
+// <img
+//   src="https://www.fg-a.com/under-construction/under-construction-night.gif"
+//   alt="Under Construction"
+//   className="w-20 h-auto"
+// />
+// </div>
