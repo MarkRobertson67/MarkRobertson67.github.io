@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.74bb34cb.css",
-    "main.js": "/static/js/main.0dd2e431.js",
+    "main.js": "/static/js/main.a0171d10.js",
     "static/media/luxuryridesclip.mp4": "/static/media/luxuryridesclip.5ba5e104e338b5812283.mp4",
     "static/media/citywhispererclip.mp4": "/static/media/citywhispererclip.8fa8411ed43a499f6193.mp4",
     "static/media/weatherappclip.mp4": "/static/media/weatherappclip.26dee10776ac436b5c08.mp4",
@@ -15,10 +15,10 @@
     "static/media/ErrorNotFound.mp4": "/static/media/ErrorNotFound.59aecfead9ff8b7daf98.mp4",
     "index.html": "/index.html",
     "main.74bb34cb.css.map": "/static/css/main.74bb34cb.css.map",
-    "main.0dd2e431.js.map": "/static/js/main.0dd2e431.js.map"
+    "main.a0171d10.js.map": "/static/js/main.a0171d10.js.map"
   },
   "entrypoints": [
     "static/css/main.74bb34cb.css",
-    "static/js/main.0dd2e431.js"
+    "static/js/main.a0171d10.js"
   ]
 }
