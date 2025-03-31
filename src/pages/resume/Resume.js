@@ -1,9 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 
 function Resume() {
-  const navigate = useNavigate();
   const resumeUrl = "/Mark_Robertson_Resume.pdf";
 
   return (

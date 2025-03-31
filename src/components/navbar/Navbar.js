@@ -17,17 +17,35 @@ function Navbar() {
           <Link to="/">Mark Robertson</Link>
         </h2>
         <ul className="space-y-4 text-lg">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-          <li><Link to="/recommendations">Recommendations</Link></li>
-          <li><Link to="/contact">Contact Me</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link to="/recommendations">Recommendations</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Me</Link>
+          </li>
         </ul>
       </div>
 
       {/* Mobile Navbar */}
-      <div className="md:hidden fixed top-0 left-0 w-full bg-gray-600  text-orange-500 z-[1000] px-6 py-4 flex justify-between items-center shadow-lg font-fredoka">
+      <div
+  className="md:hidden fixed top-0 left-0 w-full bg-white dark:bg-gray-600 text-orange-500 z-[1000] px-6 py-5 flex justify-between items-center font-fredoka"
+  style={{ 
+    paddingTop: "calc(1rem + env(safe-area-inset-top))",
+    boxShadow: "0 15px 30px rgba(0, 0, 0, 0.6)" 
+  }}
+>
         <h2 className="text-xl font-bold">
           <Link to="/" className="block">
             Mark Robertson
@@ -44,12 +62,24 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden fixed top-14 left-0 w-full bg-gray-600 text-orange-500 p-6 flex flex-col space-y-4 shadow-lg z-50 font-fredoka">
-          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}>About Me</Link>
-          <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
-          <Link to="/resume" onClick={() => setIsOpen(false)}>Resume</Link>
-          <Link to="/recommendations" onClick={() => setIsOpen(false)}>Recommendations</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Me</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
+            About Me
+          </Link>
+          <Link to="/projects" onClick={() => setIsOpen(false)}>
+            Projects
+          </Link>
+          <Link to="/resume" onClick={() => setIsOpen(false)}>
+            Resume
+          </Link>
+          <Link to="/recommendations" onClick={() => setIsOpen(false)}>
+            Recommendations
+          </Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>
+            Contact Me
+          </Link>
         </div>
       )}
     </nav>
