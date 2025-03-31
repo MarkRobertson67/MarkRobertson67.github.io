@@ -13,8 +13,7 @@ export default function Layout({ children }) {
         className="
           ml-0 md:ml-60
           pt-16 md:pt-0
-          // h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)]
-          min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-4rem)]
+          h-[calc(100vh-8rem)] md:h-[calc(100vh-4rem)]
           overflow-y-auto
         "
       >
@@ -28,3 +27,5 @@ export default function Layout({ children }) {
     </>
   );
 }
+
+// min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-4rem)]
