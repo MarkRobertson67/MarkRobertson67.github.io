@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfolio App",
+  "name": "Mark Robertson's Portfolio App",
+  "version": "0.1.0 - Beta",
   "icons": [
     {
       "src": "favicon.ico",
