@@ -2,12 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi"; 
 
+
 function Resume() {
   const navigate = useNavigate();
   const resumeUrl = "/Mark_Robertson_Resume.pdf";
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 pb-16 bg-gray-100 dark:bg-gray-600">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
@@ -17,7 +18,7 @@ function Resume() {
       </button>
 
       {/* PDF Viewer with Fallback */}
-      <div className="w-full max-w-4xl border bg-white p-4 shadow-lg">
+      <div className="w-full max-w-4xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-600">
         <object
           data={resumeUrl}
           type="application/pdf"
@@ -28,21 +29,11 @@ function Resume() {
             className="w-full h-[800px]"
             title="Resume"
           />
-          <p className="text-center text-gray-700">
+          <p>
             This browser does not support PDFs.
-            <a
-              href={resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline ml-1"
-            >
-              Download PDF
-            </a>
           </p>
         </object>
       </div>
-
-      
     </div>
   );
 }

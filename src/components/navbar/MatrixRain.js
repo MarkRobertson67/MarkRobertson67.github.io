@@ -35,7 +35,7 @@ function MatrixRain() {
     function draw() {
       // Fade the background slightly to create trails
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-      ctx.fillRect(0, 0, width, height);
+      ctx.fillRect(0, 0, width + 1, height);
 
       ctx.fillStyle = "rgba(0, 150, 0, 0.7)";
 

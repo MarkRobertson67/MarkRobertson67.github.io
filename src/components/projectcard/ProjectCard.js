@@ -36,7 +36,7 @@ function ProjectCard({ project }) {
       href={project.website}
       target="_blank"
       rel="noopener noreferrer"
-      className="block border border-gray-200 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300"
+      className="block bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -63,8 +63,12 @@ function ProjectCard({ project }) {
         )}
       </div>
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-        <p className="text-gray-700 text-sm mb-2">{project.description}</p>
+        <h3 className="text-xl font-semibold mb-2 dark:text-gray-200">
+          {project.title}
+        </h3>
+        <p className="text-gray-700 dark:text-gray-300 text-sm mb-2">
+          {project.description}
+        </p>
         <span className="text-blue-600 hover:underline text-sm font-semibold">
           Click here to go to the site
         </span>

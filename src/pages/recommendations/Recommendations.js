@@ -53,20 +53,24 @@ function Recommendations() {
     text.length > length ? text.substring(0, length) + "..." : text;
 
   return (
-    <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-br from-blue-50 to-gray-50 p-6 md:p-10">
-      <h2 className="text-3xl font-bold mb-8 text-center">Recommendations</h2>
+    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-blue-50 to-gray-50 dark:from-gray-600 dark:to-gray-600 pt-6 px-6 pb-0 md:pt-10 md:px-10 md:pb-0">
+      <h2 className="text-3xl font-bold mb-8 text-center dark:text-gray-100">
+        Recommendations
+      </h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {recommendations.map((rec, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow p-6 border-l-4 border-blue-500 transform transition duration-300 hover:scale-105 cursor-pointer"
+            className="bg-white dark:bg-gray-700 rounded-xl shadow-2xl p-6 border-l-4 border-blue-500 dark:border-blue-300 transform transition duration-300 hover:scale-105 cursor-pointer"
             onClick={() => setSelectedRec(rec)}
           >
-            <p className="italic text-gray-700 mb-4">
+            <p className="italic text-gray-700 dark:text-gray-300 mb-4">
               "{truncateText(rec.quote)}"
             </p>
-            <div className="text-sm text-gray-500 text-center">
-              <p className="font-semibold text-gray-800">{rec.name}</p>
+            <div className="text-sm text-gray-500 dark:text-gray-400 text-center">
+              <p className="font-semibold text-gray-800 dark:text-gray-200">
+                {rec.name}
+              </p>
               <p>{rec.title}</p>
               <p>
                 {rec.date} – {rec.relation}
@@ -82,7 +86,7 @@ function Recommendations() {
           href="https://www.linkedin.com/in/mark-robertson-ny-uk/details/recommendations/?detailScreenTabIndex=0"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          className="inline-block px-6 py-3 bg-blue-600 dark:bg-blue-700 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-800 transition"
         >
           See More Details on LinkedIn
         </a>
@@ -95,21 +99,25 @@ function Recommendations() {
           onClick={closeModal}
         >
           <div
-            className="bg-white p-6 rounded shadow-lg max-w-2xl w-full mx-4 overflow-y-auto max-h-[80vh]"
+            className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-3xl max-w-2xl w-full mx-4 overflow-y-auto max-h-[80vh]"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-xl font-bold mb-4 text-center">
+            <h3 className="text-xl font-bold mb-4 text-center dark:text-white">
               {selectedRec.name}
             </h3>
-            <p className="italic text-gray-700 mb-4">{selectedRec.quote}</p>
-            <div className="text-sm text-gray-500 text-center">
-              <p className="font-semibold text-gray-800">{selectedRec.title}</p>
+            <p className="italic text-gray-700 dark:text-gray-300 mb-4">
+              {selectedRec.quote}
+            </p>
+            <div className="text-sm text-gray-500 dark:text-gray-400 text-center">
+              <p className="font-semibold text-gray-800 dark:text-gray-200">
+                {selectedRec.title}
+              </p>
               <p>
                 {selectedRec.date} – {selectedRec.relation}
               </p>
             </div>
             <button
-              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition block mx-auto"
+              className="mt-4 px-4 py-2 bg-blue-600 dark:bg-blue-700 text-white rounded hover:bg-blue-700 dark:hover:bg-blue-800 transition block mx-auto"
               onClick={closeModal}
             >
               Close

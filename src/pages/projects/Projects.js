@@ -59,8 +59,10 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="min-h-[calc(100vh-8rem)] bg-white p-6 md:p-10">
-      <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
+    <div className="min-h-[calc(100vh-8rem)] bg-white dark:bg-gray-600 p-6 md:p-10">
+      <h2 className="text-3xl font-bold mb-8 text-center dark:text-gray-100">
+        My Projects
+      </h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />

@@ -12,7 +12,7 @@ function Navbar() {
       <MatrixRain />
 
       {/* Desktop Sidebar */}
-      <div className="hidden md:flex fixed top-0 left-0 h-full w-60border-r-2 text-orange-500 px-6 py-8 flex-col space-y-6 shadow-lg font-fredoka">
+      <div className="hidden md:flex fixed top-0 left-0 h-full w-60 text-orange-500 px-6 py-8 flex-col space-y-6 font-fredoka">
         <h2 className="text-2xl font-bold mb-4">
           <Link to="/">Mark Robertson</Link>
         </h2>
@@ -43,7 +43,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed top-14 left-0 w-full bg-white text-orange-500 p-6 flex flex-col space-y-4 shadow-lg z-50 font-fredoka">
+        <div className="md:hidden fixed top-14 left-0 w-full bg-gray-600 text-orange-500 p-6 flex flex-col space-y-4 shadow-lg z-50 font-fredoka">
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About Me</Link>
           <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
