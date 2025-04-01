@@ -16,7 +16,7 @@ function Home() {
         }}
       >
         {/* Top section with your main heading */}
-        <div className="pt-[20rem] md:pt-[17rem] text-center">
+        <div className="pt-[17rem] md:pt-[17rem] text-center">
         <h1 className="text-4xl md:text-7xl font-bold mb-4 animate-bounce">
             <span className="neon-text">MY<br /> PORTFOLIO</span>
           </h1>
