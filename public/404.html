@@ -5,14 +5,9 @@
     <title>Redirecting...</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="text/javascript">
-      // Preserve the original path so your app can handle it
       var originalPath = window.location.pathname;
-      // Option 1: Redirect without preserving the route (simpler, but loses route info)
-      // window.location.replace("/index.html");
-      
-      // Option 2: Append the original path as a hash fragment.
-      // Your React app would need to read the hash to redirect to the correct route.
-      window.location.replace("/index.html#"+originalPath);
+      // Redirect to the root with the hash fragment (without 'index.html')
+      window.location.replace(window.location.origin + '/#' + originalPath);
     </script>
   </head>
   <body>

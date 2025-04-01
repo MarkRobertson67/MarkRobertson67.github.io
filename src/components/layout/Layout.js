@@ -23,6 +23,7 @@ export default function Layout({ children }) {
 
       {/* Main container (offset by 15rem on desktop) */}
       <div
+      ref={scrollContainerRef}
         className="
           ml-0 md:ml-60
           pt-16 md:pt-0
