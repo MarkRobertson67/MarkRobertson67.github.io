@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
 
 export default function Layout({ children }) {
+  const scrollContainerRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Reset window scroll
+    window.scrollTo(0, 0);
+    // Also reset the scrollable container if it exists
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = 0;
+    }
+  }, [location]);
+
   return (
     <>
       {/* Fixed Navbar */}
