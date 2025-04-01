@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
@@ -28,7 +28,7 @@ function RedirectHandler() {
 function App() {
 
   return (
-    <Router>
+    <>
       <RedirectHandler />
       <Layout>
         <Routes>
@@ -43,7 +43,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
-    </Router>
+    </>
   );
 }
 

@@ -74,7 +74,10 @@ function Recommendations() {
               <p>{rec.title}</p>
               <p>
                 {rec.date} – {rec.relation}
-              </p>
+              </p><br />
+              <small style={{ color: '#888', fontStyle: 'italic' }}>
+            Click to reveal full recommendation
+          </small>
             </div>
           </div>
         ))}
