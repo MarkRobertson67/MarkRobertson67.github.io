@@ -19,7 +19,7 @@ const projects = [
       "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (App Link coming soon!)",
     screenshot: timecardappPic,
     video: timecardVideo,
-    website: "https://example.com/timecardapp", // Replace with my actual URL when ready
+    website: "https://citywhisperer-mark.netlify.app/",
   },
   {
     title: "City Whisperer",
@@ -54,7 +54,6 @@ const projects = [
     website: "https://marks-weather-app.netlify.app/",
   },
 
-  // Add more projects here if needed...
 ];
 
 function Projects() {
