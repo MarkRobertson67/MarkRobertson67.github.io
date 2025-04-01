@@ -1,3 +1,38 @@
+# My Portfolio App
+
+This is a personal portfolio website built with React, React Router, and Tailwind CSS. The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
+
+## Features
+
+- **Responsive Design:**  
+  Adaptable layout for both desktop and mobile devices with a side menu on desktop and a hamburger menu on mobile.
+- **Client-side Routing:**  
+  Navigates between pages using React Router with a custom 404 fallback for GitHub Pages.
+- **Neon Flicker Effect:**  
+  Custom CSS animations create a faulty neon light effect on key text elements.
+- **Full-screen Background:**  
+  Uses a background image that covers the entire viewport without scrolling.
+- **Easy Navigation:**  
+  Clickable areas and intuitive menus allow quick access to different sections of the portfolio.
+
+## Technologies Used
+
+- **React** – For building user interfaces.
+- **React Router** – For managing client-side routing.
+- **Tailwind CSS** – For rapid styling with utility-first classes.
+- **Custom CSS** – For animations and unique design effects (e.g., neon flicker).
+- **GitHub Pages** – For deployment of the static site.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/your-portfolio-app.git
+   cd your-portfolio-app
+
+
+
 # My Folio
 
 # Getting Started with Create React App

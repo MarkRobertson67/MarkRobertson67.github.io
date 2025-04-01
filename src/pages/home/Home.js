@@ -1,17 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import MarkRobertsonPortfolio from "../../images/HomeImage.png";
+import "./Home.css"; 
 
 function Home() {
   return (
-    <div
-      className="flex flex-col items-center justify-center min-h-[calc(100vh-5rem)]
-                    bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500
-                    dark:from-gray-800 dark:via-gray-700 dark:to-gray-900
-                    text-white transform -translate-y-8"
-    >
-      <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-bounce text-center">
-        Mark Robertson's <br /> Portfolio Site<br />
-      </h1>
-    </div>
+    <Link to="/projects" className="block">
+      <div
+        className="relative flex flex-col justify-between min-h-[calc(100vh-5rem)] overflow-hidden text-white"
+        style={{
+          backgroundImage: `url(${MarkRobertsonPortfolio})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Top section with your main heading */}
+        <div className="pt-[20rem] md:pt-[17rem] text-center">
+        <h1 className="text-4xl md:text-7xl font-bold mb-4 animate-bounce">
+            <span className="neon-text">MY<br /> PORTFOLIO</span>
+          </h1>
+        </div>
+      </div>
+    </Link>
   );
 }
 
