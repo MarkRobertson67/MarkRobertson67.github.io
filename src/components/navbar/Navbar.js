@@ -1,10 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import MatrixRain from "./MatrixRain";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+    // Close the menu whenever the route changes
+    useEffect(() => {
+      setIsOpen(false);
+    }, [location]);
 
   return (
     <nav className="MatrixRain">
