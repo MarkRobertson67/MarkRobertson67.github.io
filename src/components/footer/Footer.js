@@ -11,7 +11,7 @@ function Footer() {
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Mark Robertson. All rights reserved.
           </p>
-          <p className="text-xs mt-1">Version 1.0.0</p>
+          <p className="text-xs mt-1">Version 1.0.1</p>
           <div className="flex justify-center space-x-6 mt-2">
             {/* Social Media & Email Icons */}
             <a
