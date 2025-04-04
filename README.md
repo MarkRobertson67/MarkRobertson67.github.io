@@ -2,6 +2,8 @@
 
 This is a personal portfolio website built with React, React Router, and Tailwind CSS. The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
 
+![Home Page Screenshot](./images/homepage-screenshot.png)
+
 ## Features
 
 - **Responsive Design:**  
@@ -17,91 +19,98 @@ This is a personal portfolio website built with React, React Router, and Tailwin
 
 ## Technologies Used
 
-- **React** – For building user interfaces.
-- **React Router** – For managing client-side routing.
-- **Tailwind CSS** – For rapid styling with utility-first classes.
+- **[React](https://reactjs.org/)** – For building user interfaces.
+- **[React Router](https://reactrouter.com/)** – For managing client-side routing.
+- **[Tailwind CSS](https://tailwindcss.com/)** – For rapid styling with utility-first classes.
 - **Custom CSS** – For animations and unique design effects (e.g., neon flicker).
-- **GitHub Pages** – For deployment of the static site.
+- **[GitHub Pages](https://pages.github.com/)** – For deployment of the static site.
+
 
 ## Installation
 
 1. **Clone the repository:**
 
-   ```bash
    git clone https://github.com/yourusername/your-portfolio-app.git
    cd your-portfolio-app
 
+### Install dependencies:
 
+npm install
+# or
+yarn install
 
-# My Folio
+npm start
+# or
+yarn start
 
-# Getting Started with Create React App
+The app will run at http://localhost:3000.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployment:
 
-## Available Scripts
+### To deploy this app to GitHub Pages:
 
-In the project directory, you can run:
+npm run build
+# or
+yarn build
 
-### `npm start`
+### Deploy using GitHub Pages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can use the gh-pages package to deploy your build folder. For more details, see the Create React App deployment documentation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure:
 
-### `npm test`
+my-portfolio-app/
+├── public/
+│   ├── index.html
+│   ├── 404.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Layout/
+│   │   ├── Navbar/
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Projects.js
+│   │   ├── Resume.js
+│   │   ├── AboutMe.js
+│   │   ├── Recommendations.js
+│   │   └── ContactMe.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configuration:
 
-### `npm run build`
+### React Router Future Flags:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app uses future flags for React Router to enable new relative splat path resolution and state updates wrapped in React.startTransition. These flags are set in index.js:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
+  <App />
+</BrowserRouter>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Neon Text Animation:
 
-### `npm run eject`
+The neon flicker effect is implemented in a CSS file (e.g., Home.css). You can adjust the animation parameters to fine-tune the faulty neon effect.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements. For major changes, please open an issue first to discuss your ideas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Learn More
+## Acknowledgments:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React Router
 
-### Code Splitting
+Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Inspiration from modern, minimal portfolio designs.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
