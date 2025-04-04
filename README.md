@@ -3,7 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-17.0.2-blue.svg)](https://reactjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-2.2.16-blue.svg)](https://tailwindcss.com/)
-[![npm version](https://img.shields.io/npm/v/mark_robertson_portfolio.svg)](https://www.npmjs.com/package/mark_robertson_portfolio)
 
 
 This is a personal portfolio website built with [React](https://reactjs.org/), [React Router](https://reactrouter.com/), and [Tailwind CSS](https://tailwindcss.com/). The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
