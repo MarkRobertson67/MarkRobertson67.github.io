@@ -1,8 +1,34 @@
 # My Portfolio App
 
-This is a personal portfolio website built with React, React Router, and Tailwind CSS. The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-17.0.2-blue.svg)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-2.2.16-blue.svg)](https://tailwindcss.com/)
+[![npm version](https://img.shields.io/npm/v/mark_robertson_portfolio.svg)](https://www.npmjs.com/package/mark_robertson_portfolio)
 
-![Home Page Screenshot](./src/components/images/homepage-screenshot.png)
+
+This is a personal portfolio website built with [React](https://reactjs.org/), [React Router](https://reactrouter.com/), and [Tailwind CSS](https://tailwindcss.com/). The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
+
+![Home Page Screenshot](./public/homepage-screenshot.png)
+
+
+---
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [Configuration](#configuration)
+  - [React Router Future Flags](#react-router-future-flags)
+  - [Neon Text Animation](#neon-text-animation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+---
+
 
 ## Features
 
@@ -55,7 +81,8 @@ yarn build
 
 ### Deploy using GitHub Pages:
 
-You can use the gh-pages package to deploy your build folder. For more details, see the Create React App deployment documentation.
+You can use the [gh-pages](https://www.npmjs.com/package/gh-pages) package to deploy your build folder. For more details, see the [Create React App deployment documentation](https://create-react-app.dev/docs/deployment/#github-pages).
+
 
 ## Project Structure:
 
@@ -96,7 +123,7 @@ The app uses future flags for React Router to enable new relative splat path res
 </BrowserRouter>
 ```
 
-## Neon Text Animation:
+### Neon Text Animation:
 
 The neon flicker effect is implemented in a CSS file (e.g., Home.css). You can adjust the animation parameters to fine-tune the faulty neon effect.
 
