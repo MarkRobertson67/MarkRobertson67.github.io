@@ -2,7 +2,7 @@
 
 This is a personal portfolio website built with React, React Router, and Tailwind CSS. The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
 
-![Home Page Screenshot](./images/homepage-screenshot.png)
+![Home Page Screenshot](./src/components/images/homepage-screenshot.png)
 
 ## Features
 
@@ -36,11 +36,11 @@ This is a personal portfolio website built with React, React Router, and Tailwin
 ### Install dependencies:
 
 npm install
-# or
+### or
 yarn install
 
 npm start
-# or
+### or
 yarn start
 
 The app will run at http://localhost:3000.
@@ -59,6 +59,7 @@ You can use the gh-pages package to deploy your build folder. For more details, 
 
 ## Project Structure:
 
+```plaintext
 my-portfolio-app/
 ├── public/
 │   ├── index.html
@@ -81,6 +82,7 @@ my-portfolio-app/
 │   └── ...
 ├── package.json
 └── README.md
+```
 
 ## Configuration:
 
@@ -88,13 +90,38 @@ my-portfolio-app/
 
 The app uses future flags for React Router to enable new relative splat path resolution and state updates wrapped in React.startTransition. These flags are set in index.js:
 
+```jsx
 <BrowserRouter future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
   <App />
 </BrowserRouter>
+```
 
 ## Neon Text Animation:
 
 The neon flicker effect is implemented in a CSS file (e.g., Home.css). You can adjust the animation parameters to fine-tune the faulty neon effect.
+
+```css
+@keyframes neon-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 2px #ff0000,
+      0 0 4px #ff0000,
+      0 0 8px #ff0000,
+      0 0 12px #ff0000;
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    opacity: 0.3;
+  }
+}
+
+.neon-text {
+  color: #ff0000; /* Red text - update this to blue or any color as needed */
+  animation: neon-flicker 1.5s infinite alternate;
+}
+```
+
 
 ## Contributing:
 
