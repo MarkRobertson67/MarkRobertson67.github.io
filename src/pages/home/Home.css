@@ -14,7 +14,7 @@
   }
   
   .neon-text {
-    color: #0000ff; /* Red text */
+    color: #0000ff;
     animation: neon-flicker 1.5s infinite alternate;
   }
   
