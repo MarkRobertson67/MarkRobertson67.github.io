@@ -167,3 +167,10 @@ Tailwind CSS
 
 Inspiration from modern, minimal portfolio designs.
 
+[![React](https://img.shields.io/badge/React-18.2.0-blue?style=flat-square)](https://reactjs.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-3-blue?style=flat-square)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.16.0-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![EmailJS](https://img.shields.io/badge/EmailJS-Email%20Service-blue?style=flat-square)](https://www.emailjs.com/)
+
