@@ -46,7 +46,7 @@ function Navbar() {
 
       {/* Mobile Navbar */}
       <div
-        className="md:hidden fixed top-0 left-0 w-full bg-white dark:bg-gray-600 z-[1000] px-6 py-5 flex justify-between items-center font-fredoka shadow-lg"
+        className="md:hidden fixed top-0 left-0 w-full bg-white dark:bg-[#011625] z-[1000] px-6 py-5 flex justify-between items-center font-fredoka shadow-lg"
         style={{ 
           paddingTop: "calc(1rem + env(safe-area-inset-top))",
         }}
@@ -69,7 +69,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed top-14 left-0 w-full bg-white dark:bg-gray-800 text-black dark:text-white p-6 flex flex-col space-y-4 shadow-lg z-50 font-fredoka">
+        <div className="md:hidden fixed top-14 left-0 w-full bg-white dark:bg-[#011625] text-black dark:text-white p-6 flex flex-col space-y-4 shadow-lg z-50 font-fredoka">
           <Link to="/" className="hover:text-blue-500" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/about" className="hover:text-blue-500" onClick={() => setIsOpen(false)}>About Me</Link>
           <Link to="/projects" className="hover:text-blue-500" onClick={() => setIsOpen(false)}>Projects</Link>

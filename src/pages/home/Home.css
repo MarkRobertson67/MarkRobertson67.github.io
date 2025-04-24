@@ -1,6 +1,4 @@
-/* Home.css */
 
-/* 1) Global reset to stop unwanted scrollbars (optional) */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,43 +6,32 @@ html, body {
   overflow: hidden;
 }
 
-/* 2) The “hero” wrapper—fills viewport minus header+footer */
 .container {
-  /* 🔥 nuke bootstrap’s max-width and padding */
   max-width: none;
   padding: 0;
   margin: 0;
-
-  /* now span the full viewport */
   width: 100vw;
   position: relative;
   left: 50%;
   margin-left: -50vw;
-
-  /* keep your height and centering */
-  height: calc(100vh - 105px);
+  height: calc(100vh - 82px);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-/* 3) The <img> itself */
 .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* 4) Mobile override if you really want distortion */
+
 @media (max-width: 768px) {
   .container {
     height: calc(100vh - 145px);
-    width: 150%;
-    object-fit: cover;
-    margin-left: -74%;
-  }
-  .img {
-    object-fit: fill; 
+    /* width: 150%; */
+    object-fit: fill;
   }
 }
