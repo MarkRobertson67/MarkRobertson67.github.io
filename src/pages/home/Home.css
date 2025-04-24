@@ -1,22 +1,50 @@
-/* Prevent scrolling on body and html */
-body, html {
+/* Home.css */
+
+/* 1) Global reset to stop unwanted scrollbars (optional) */
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* Prevent scrolling */
+  overflow: hidden;
 }
 
-/* Mobile responsiveness: Apply only on screens smaller than 768px */
-@media screen and (max-width: 768px) {
+/* 2) The “hero” wrapper—fills viewport minus header+footer */
+.container {
+  /* 🔥 nuke bootstrap’s max-width and padding */
+  max-width: none;
+  padding: 0;
+  margin: 0;
+
+  /* now span the full viewport */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  /* keep your height and centering */
+  height: calc(100vh - 105px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 3) The <img> itself */
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 4) Mobile override if you really want distortion */
+@media (max-width: 768px) {
+  .container {
+    height: calc(100vh - 145px);
+    width: 150%;
+    object-fit: cover;
+    margin-left: -74%;
+  }
   .img {
-    height: calc(100vh - 173px); /* Set the height of the image to fit the viewport minus 173px */
-    object-fit: fill; /* Stretch the image to fill the container */
-  }
-
-  /* Ensure the container does not cause overflow */
-  .img-container {
-    height: calc(100vh - 173px);
-    overflow: hidden; /* Prevent overflow inside the container */
+    object-fit: fill; 
   }
 }
-
