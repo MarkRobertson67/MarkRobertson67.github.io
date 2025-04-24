@@ -7,7 +7,7 @@
 
 This is a personal portfolio website built with [React](https://reactjs.org/), [React Router](https://reactrouter.com/), and [Tailwind CSS](https://tailwindcss.com/). The app showcases my projects, resume, recommendations, and contact details with a modern, responsive design. It features a full-screen background image with a neon flicker effect on the text and mobile-friendly navigation.
 
-![Home Page Screenshot](./public/homepage-screenshot.png)
+![Home Page Screenshot](./public/MarkRobertsonPortfolio.png)
 
 
 ---
@@ -172,5 +172,5 @@ Inspiration from modern, minimal portfolio designs.
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Node.js](https://img.shields.io/badge/Node.js-18.16.0-green?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![EmailJS](https://img.shields.io/badge/EmailJS-Email%20Service-blue?style=flat-square)](https://www.emailjs.com/)
+[![EmailJS](https://img.shields.io/badge/EmailJS-Email%20Service-blue?style=flat-square)](https://www.emailjs.com/)<br>
 This site was built using [GitHub Pages](https://pages.github.com/):+1:
