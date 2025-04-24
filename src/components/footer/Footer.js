@@ -4,7 +4,7 @@ import DarkModeToggle from "../DarkModeToggle"; // adjust path as needed
 
 function Footer() {
   return (
-    <footer className="bg-gray-600 text-white py-4">
+    <footer style={{ backgroundColor: '#011625' }} className="text-white py-4">
       <div className="max-w-7xl mx-auto relative px-6">
         <div>
         <div className="text-center">
@@ -21,7 +21,7 @@ function Footer() {
             >
               <FaGithub
                 size={30}
-                color="#181717"
+                color="#FFFFFF"
                 className="hover:opacity-80 transition duration-200"
               />
             </a>

@@ -1,20 +1,10 @@
-@keyframes neon-flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-      text-shadow:
-        0 0 2px #0000ff,
-        0 0 4px #0000ff,
-        0 0 8px #0000ff,
-        0 0 12px #0000ff; /* Stronger outer glow */
-      opacity: 1;
-    }
-    20%, 24%, 55% {
-      text-shadow: none;
-      opacity: 0.3;
-    }
+
+
+/* Mobile responsiveness: Apply only on screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .img {
+    /* height: calc(100vh - 173px); */
+    object-fit: fill; 
   }
-  
-  .neon-text {
-    color: #0000ff;
-    animation: neon-flicker 1.5s infinite alternate;
-  }
-  
+}
+

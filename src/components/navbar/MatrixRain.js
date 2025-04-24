@@ -14,9 +14,9 @@ function MatrixRain() {
     canvas.width = width;
     canvas.height = height;
 
-    // Create a black background
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, width, height);
+    // Set the initial background color (dark blue)
+    ctx.fillStyle = "#011625"; // Dark blue background
+    ctx.fillRect(0, 0, width, height); // Fill canvas with the background color
 
     function getRandomChar() {
       const min = 33; // Start of printable ASCII characters
@@ -27,23 +27,22 @@ function MatrixRain() {
 
     const fontSize = 14;
     const columns = Math.floor(width / fontSize);
-    //const drops = new Array(columns).fill(1);
     const drops = new Array(columns)
       .fill(0)
       .map(() => Math.floor(Math.random() * (height / fontSize)));
 
     function draw() {
-      // Fade the background slightly to create trails
-      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-      ctx.fillRect(0, 0, width + 1, height);
+      // Apply fading effect to the matrix text using the background color (with slight transparency)
+      ctx.fillStyle = "rgba(1, 22, 37, 0.05)"; // Faint fade using the background color (#011625) with alpha
+      ctx.fillRect(0, 0, width, height);  // Apply the fading effect over the matrix text
 
-      ctx.fillStyle = "rgba(0, 150, 0, 0.7)";
-
+      // Set the text color (green for matrix effect)
+      ctx.fillStyle = "rgba(0, 150, 0, 0.7)"; // Green text color with slight transparency
       ctx.font = fontSize + "px monospace";
 
+      // Draw the falling text (matrix characters)
       for (let i = 0; i < drops.length; i++) {
         const text = getRandomChar();
-
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
         // Reset drop randomly if it goes off-screen
