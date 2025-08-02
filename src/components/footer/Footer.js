@@ -16,7 +16,7 @@ function Footer() {
                 className="hover:opacity-80 transition duration-200"
               />
             </a>
-            <a href="https://www.linkedin.com/in/mark-robertson-654712326" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/mark-robertson-ny-uk" target="_blank" rel="noopener noreferrer">
               <FaLinkedin
                 size={30}
                 color="#0077b5"
