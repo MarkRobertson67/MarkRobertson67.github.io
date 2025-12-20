@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MarkRobertsonPortfolio from "../../images/MarkRobertsonPortfolio.png";
+//import MarkRobertsonPortfolio from "../../images/MarkRobertsonPortfolio.png";
+import MarkRobertsonPortfolio from "../../images/DataAnalysis.png";
 import "./Home.css";
 
 function Home() {
