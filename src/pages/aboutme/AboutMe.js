@@ -8,39 +8,19 @@ const AboutMe = () => {
           About Me
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-          Hi, I'm Mark Robertson – a passionate developer and creative thinker
-          who loves building engaging, user-friendly web experiences. I
-          specialize in modern JavaScript frameworks like React and enjoy
-          leveraging tools like Tailwind CSS to bring vibrant designs to life.
+          Hi, I’m Mark Robertson, a data analyst with a strong technical and financial background who specializes in transforming raw data into actionable insights that support business decision-making.
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-          I’m a software developer with a passion for web applications,
-          AI-driven solutions, and data-driven technologies. With a background
-          in finance and securities trading, I bring a unique perspective to
-          building intuitive, user-centric applications that enhance business
-          processes.
+          I bring hands-on experience using SQL, Python, and data visualization tools to clean, analyze, and interpret datasets, build dashboards, and deliver clear, data-driven insights. My work focuses on improving data quality, identifying trends, and communicating results in a way that enables stakeholders to make informed decisions.
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-          I thrive in dynamic environments and enjoy collaborating with
-          cross-functional teams and stakeholders to develop technology
-          solutions that align with business goals. My approach leverages AI and
-          automation not just to optimize user experiences but also to drive
-          efficiency, innovation, and informed decision-making.
+          With a background in finance and securities trading, I’ve worked extensively with large, fast-moving datasets in high-pressure environments. This experience has shaped a disciplined, analytical approach to problem-solving, performance measurement, and risk assessment, as well as a strong ability to explain complex findings to both technical and non-technical audiences.
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-          Having worked extensively as a private money manager, I’ve
-          collaborated closely with high-net-worth investors and institutional
-          traders in fast-paced, high-pressure markets. This experience has
-          honed my ability to communicate complex financial and technical
-          concepts, navigate high-stakes decision-making, and build trust with
-          demanding stakeholders.
+          My transition into software development strengthened my ability to design end-to-end data workflows, automate reporting, and build tools that support analytics at scale. I enjoy collaborating with cross-functional teams to ensure data solutions align with business goals and deliver measurable impact.
         </p>
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          Transitioning into software engineering has opened new opportunities
-          where technology, business, and innovation intersect—especially in
-          fintech and trading solutions. Beyond coding, I’m passionate about
-          Formula 1 and global travel, drawing inspiration from diverse cultures
-          and experiences that shape my approach to problem-solving.
+          Beyond analytics, I’m interested in how automation, AI, and modern data tools can enhance efficiency and insight across industries. Outside of work, I enjoy Formula 1 and global travel, which continually influence how I think about systems, performance, and optimization.
         </p>
       </div>
     </div>
