@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c34f92b3.css",
-    "main.js": "/static/js/main.e9e458b8.js",
+    "main.js": "/static/js/main.92dc8662.js",
     "static/media/luxuryridesclip.mp4": "/static/media/luxuryridesclip.5ba5e104e338b5812283.mp4",
     "static/media/citywhispererclip.mp4": "/static/media/citywhispererclip.8fa8411ed43a499f6193.mp4",
     "static/media/weatherappclip.mp4": "/static/media/weatherappclip.26dee10776ac436b5c08.mp4",
+    "static/media/DataAnalysis.png": "/static/media/DataAnalysis.e87df570bb99a190eb34.png",
     "static/media/studentdashboardclip.mp4": "/static/media/studentdashboardclip.792046a8b7b837ed2a02.mp4",
-    "static/media/MarkRobertsonPortfolio.png": "/static/media/MarkRobertsonPortfolio.53da8fdefe669fab7354.png",
     "static/media/citywhispererpic.png": "/static/media/citywhispererpic.c5ddb1f2862866ce3606.png",
     "static/media/timecardclip.mp4": "/static/media/timecardclip.926c6af5521e83f1f8a7.mp4",
     "static/media/timecardapp.png": "/static/media/timecardapp.a221d42f99b2d3445192.png",
@@ -16,10 +16,10 @@
     "static/media/ErrorNotFound.mp4": "/static/media/ErrorNotFound.59aecfead9ff8b7daf98.mp4",
     "index.html": "/index.html",
     "main.c34f92b3.css.map": "/static/css/main.c34f92b3.css.map",
-    "main.e9e458b8.js.map": "/static/js/main.e9e458b8.js.map"
+    "main.92dc8662.js.map": "/static/js/main.92dc8662.js.map"
   },
   "entrypoints": [
     "static/css/main.c34f92b3.css",
-    "static/js/main.e9e458b8.js"
+    "static/js/main.92dc8662.js"
   ]
 }
