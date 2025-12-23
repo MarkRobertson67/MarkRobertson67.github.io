@@ -103,14 +103,23 @@ function Projects() {
         Projects
       </h2>
 
-      {/* Scroll hint */}
-      <div
-        className="text-center mb-12 cursor-pointer"
-        onClick={scrollToNext}
-      >
+      <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
         <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
           Data analysis projects coming soon.
-          <span className="animate-bounce mt-2 text-2xl">↓</span>
+          <span
+            className="
+        animate-bounce
+        mt-2
+        text-3xl
+        text-blue-600
+        dark:text-blue-400
+        hover:text-blue-700
+        dark:hover:text-blue-300
+        transition-colors
+      "
+          >
+            ↓
+          </span>
           Scroll to explore professional web apps
         </p>
       </div>
