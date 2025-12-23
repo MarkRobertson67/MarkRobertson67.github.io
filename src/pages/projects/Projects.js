@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import ProjectCard from "../../components/projectcard/ProjectCard";
 
 // Images & Videos
@@ -12,6 +12,14 @@ import weatherappPic from "../../images/weatherapp.png";
 import weatherappVideo from "../../images/weatherappclip.mp4";
 import studentdashboardPic from "../../images/studentdashboard.png";
 import studentdashboardVideo from "../../images/studentdashboardclip.mp4";
+
+function Projects() {
+  const nextSectionRef = useRef(null);
+
+  const scrollToNext = () => {
+    nextSectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
 
 const projectCategories = [
   {
@@ -89,6 +97,7 @@ const projectCategories = [
     ],
   },
 ];
+}
 
 function Projects() {
   return (
@@ -97,8 +106,8 @@ function Projects() {
         Projects
       </h2>
 
-          {/* Scroll hint for first category */}
-      <div className="scroll-hint text-center mb-12">
+      {/* Scroll hint for first category */}
+      <div className="scroll-hint text-center mb-12 cursor-pointer" onClick={scrollToNext}>
         <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
           Data analysis projects coming soon.
           <span className="animate-bounce mt-2 text-2xl">↓</span>
@@ -107,7 +116,11 @@ function Projects() {
       </div>
 
       {projectCategories.map((category, idx) => (
-        <div key={idx} className="mb-16">
+        <div
+          key={idx}
+          className="mb-16"
+          ref={idx === 1 ? nextSectionRef : null} // Only attach ref to the 2nd category
+        >
           <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">
             {category.category}
           </h3>
@@ -134,4 +147,3 @@ function Projects() {
 }
 
 export default Projects;
-
