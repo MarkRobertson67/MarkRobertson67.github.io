@@ -97,6 +97,15 @@ function Projects() {
         Projects
       </h2>
 
+          {/* Scroll hint for first category */}
+      <div className="scroll-hint text-center mb-12">
+        <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
+          Data analysis projects coming soon.
+          <span className="animate-bounce mt-2 text-2xl">↓</span>
+          Scroll to explore professional web apps
+        </p>
+      </div>
+
       {projectCategories.map((category, idx) => (
         <div key={idx} className="mb-16">
           <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">
