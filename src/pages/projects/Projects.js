@@ -32,7 +32,7 @@ const projectCategories = [
     category: "Professional Web Apps",
     projects: [
       {
-        title: "Time Card App",
+        title: "Time Card App — Production Web App",
         description:
           "Modeled and aggregated payroll time-series data to generate biweekly KPIs and export clean CSV reports.",
         techStack:
