@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "../../components/projectcard/ProjectCard";
+
+// Images & Videos
 import citywhispererPic from "../../images/citywhispererpic.png";
 import citywhispererVideo from "../../images/citywhispererclip.mp4";
 import timecardappPic from "../../images/timecardapp.png";
@@ -11,64 +13,116 @@ import weatherappVideo from "../../images/weatherappclip.mp4";
 import studentdashboardPic from "../../images/studentdashboard.png";
 import studentdashboardVideo from "../../images/studentdashboardclip.mp4";
 
-
-const projects = [
+const projectCategories = [
   {
-    title: "Time Card App",
-    description:
-      "A time tracking application designed to streamline attendance records and boost efficiency in the workplace. (App Link coming soon!)",
-    screenshot: timecardappPic,
-    video: timecardVideo,
-    website: "https://wcac-timecards-demo.netlify.app",
+    category: "Data Analysis Projects",
+    projects: [
+      {
+        title: "Coming Soon",
+        description:
+          "Planned data analysis project focusing on data cleaning, exploratory analysis, KPI development, and visualization.",
+        techStack: "Python | Pandas | SQL | Tableau",
+        screenshot: "",
+        video: "",
+        website: "#",
+      },
+    ],
   },
   {
-    title: "City Whisperer",
-    description:
-      "City Whisperer redefines urban exploration with curated walking routes, AI-powered tours, and interactive maps driven by real-time data. Discover hidden city gems and customize your adventure as you dive into the vibrant pulse of urban life.",
-    screenshot: citywhispererPic,
-    video: citywhispererVideo,
-    website: "https://citywhisperer-mark.netlify.app",
+    category: "Professional Web Apps",
+    projects: [
+      {
+        title: "Time Card App",
+        description:
+          "Modeled and aggregated payroll time-series data to generate biweekly KPIs and export clean CSV reports.",
+        techStack:
+          "SQL | PostgreSQL (Neon) | Data Modeling | Aggregations | Reporting | CSV Exports | KPI Calculation",
+        screenshot: timecardappPic,
+        video: timecardVideo,
+        website: "https://wcac-timecards-demo.netlify.app",
+      },
+      {
+        title: "City Whisperer",
+        description:
+          "Ingested and transformed multi-source API data to generate personalized, insight-driven walking tours.",
+        techStack:
+          "SQL | PostgreSQL | API Data Ingestion | Feature Engineering | Data Visualization | OpenAI API | Google Maps API",
+        screenshot: citywhispererPic,
+        video: citywhispererVideo,
+        website: "https://citywhisperer-mark.netlify.app",
+      },
+    ],
   },
   {
-    title: "My Luxury Rides",
-    description:
-      "A full-stack app with a React front-end and robust RESTful back-end, showcasing a curated vehicle collection with CRUD and filtering features.",
-    screenshot: luxuryridesPic,
-    video: luxuryridesVideo,
-    website: "https://myluxuryrides.netlify.app",
+    category: "Learning Projects",
+    projects: [
+      {
+        title: "My Luxury Rides",
+        description:
+          "Learning-focused full-stack project demonstrating CRUD operations, dataset filtering, and structured data handling.",
+        techStack:
+          "React | Express | SQL | CRUD | Filtering | Dataset Handling",
+        screenshot: luxuryridesPic,
+        video: luxuryridesVideo,
+        website: "https://myluxuryrides.netlify.app",
+      },
+      {
+        title: "Student Dashboard",
+        description:
+          "Aggregated student performance data and displayed KPIs, certifications, and real-time alerts.",
+        techStack:
+          "React | Data Aggregation | Performance Metrics | KPI Visualization | Real-time Alerts",
+        screenshot: studentdashboardPic,
+        video: studentdashboardVideo,
+        website: "https://mystudent-dashboard.netlify.app",
+      },
+      {
+        title: "Weather App",
+        description:
+          "Processed external API weather data and displayed historical trends and forecasts.",
+        techStack:
+          "React | API Integration | JSON Parsing | Data Transformation",
+        screenshot: weatherappPic,
+        video: weatherappVideo,
+        website: "https://marks-weather-app.netlify.app",
+      },
+    ],
   },
-  {
-    title: "Student Dashboard",
-    description:
-      "A React student dashboard app that uses a local data file to sort students by semester and display cards with name, photo, CodeWars stats, scores, certifications, expandable notes with 1-on-1 feedback, and real-time graduation tracking alerts.",
-    screenshot: studentdashboardPic,
-    video: studentdashboardVideo,
-    website: "https://mystudent-dashboard.netlify.app",
-  },
-  {
-    title: "Weather App",
-    description:
-      "A React-based weather app that uses API calls to fetch current weather and forecast data based on a searched city, displays a search history list, and features a temperature converter.",
-    screenshot: weatherappPic,
-    video: weatherappVideo,
-    website: "https://marks-weather-app.netlify.app",
-  },
-
 ];
 
 function Projects() {
   return (
     <div className="min-h-[calc(100vh-8rem)] bg-white dark:bg-gray-600 pb-20 p-6 md:p-10">
-      <h2 className="text-3xl font-bold mb-8 text-center dark:text-gray-100">
+      <h2 className="text-3xl font-bold mb-12 text-center dark:text-gray-100">
         Projects
       </h2>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
-      </div>
+
+      {projectCategories.map((category, idx) => (
+        <div key={idx} className="mb-16">
+          <h3 className="text-2xl font-semibold mb-6 dark:text-gray-100">
+            {category.category}
+          </h3>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {category.projects.map((project, i) => (
+              <div
+                key={i}
+                className="border dark:border-gray-500 rounded-md p-4"
+              >
+                <ProjectCard project={project} />
+                {project.techStack && (
+                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                    {project.techStack}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
 
 export default Projects;
+
