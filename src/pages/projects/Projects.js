@@ -99,10 +99,9 @@ function Projects() {
 
   return (
     <div className="min-h-[calc(100vh-8rem)] bg-white dark:bg-gray-600 pb-20 p-6 md:p-10">
-      <h2 className="text-3xl font-bold mb-12 text-center dark:text-gray-100">
+      <h2 className="text-3xl font-bold mb-4 text-center dark:text-gray-100">
         Projects
       </h2>
-
       <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
         <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
           Scroll to explore projects
