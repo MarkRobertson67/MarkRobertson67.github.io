@@ -20,10 +20,9 @@ const projectCategories = [
       {
         title: "Sales Lead Funnel Analysis",
         description:
-          "End-to-end analysis of a synthetic sales leads dataset to measure funnel conversion rates from lead creation to conversion. Identified funnel drop-off points and calculated stage-to-stage conversion KPIs using SQL, validated results in Excel, and built an interactive Tableau dashboard to communicate insights to stakeholders.",
-        techStack:
-          "SQL | Excel | Tableau | Data Cleaning | Funnel Analysis | KPI Development",
-        screenshot: "/images/funnel_dashboard.png", // optional (can add later)
+          "End-to-end analysis of a synthetic sales leads dataset to measure funnel conversion rates and identify drop-off points. Includes data cleaning, SQL aggregation, Excel validation, and an interactive Tableau dashboard to surface actionable sales insights.",
+        techStack: "SQL | Excel | Tableau | Data Cleaning | Funnel KPIs",
+        screenshot: "/DataAnalysis2.png",
         video: "",
         website: "https://github.com/MarkRobertson67/sales_lead_funnel_analysis",
       },
@@ -38,7 +37,7 @@ const projectCategories = [
           "Modeled and aggregated payroll time-series data to generate biweekly KPIs and export clean CSV reports.",
         techStack:
           "SQL | PostgreSQL (Neon) | Data Modeling | Aggregations | Reporting | CSV Exports | KPI Calculation",
-        screenshot: "/DataAnalysis2.png",
+        screenshot: timecardappPic,
         video: timecardVideo,
         website: "https://wcac-timecards-demo.netlify.app",
       },
@@ -104,7 +103,7 @@ function Projects() {
         Projects
       </h2>
 
-      <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
+      {/* <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
         <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
           Data analysis projects coming soon.
           <span
@@ -123,7 +122,7 @@ function Projects() {
           </span>
           Scroll to explore professional web apps
         </p>
-      </div>
+      </div> */}
 
       {projectCategories.map((category, idx) => (
         <div
