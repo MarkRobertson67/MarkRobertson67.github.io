@@ -102,7 +102,7 @@ function Projects() {
       <h2 className="text-3xl font-bold mb-4 text-center dark:text-gray-100">
         Projects
       </h2>
-      <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
+      <div className="text-center mb-4 cursor-pointer" onClick={scrollToNext}>
         <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
           Scroll to explore projects
           <span
