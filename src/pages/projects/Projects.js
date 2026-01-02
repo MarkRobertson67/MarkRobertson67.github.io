@@ -18,13 +18,14 @@ const projectCategories = [
     category: "Data Analysis Projects",
     projects: [
       {
-        title: "Coming Soon",
+        title: "Sales Lead Funnel Analysis",
         description:
-          "Planned data analysis project focusing on data cleaning, exploratory analysis, KPI development, and visualization.",
-        techStack: "Python | Pandas | SQL | Tableau",
-        screenshot: "",
+          "End-to-end analysis of a synthetic sales leads dataset to measure funnel conversion rates from lead creation to conversion. Identified funnel drop-off points and calculated stage-to-stage conversion KPIs using SQL, validated results in Excel, and built an interactive Tableau dashboard to communicate insights to stakeholders.",
+        techStack:
+          "SQL | Excel | Tableau | Data Cleaning | Funnel Analysis | KPI Development",
+        screenshot: "/images/funnel_dashboard.png", // optional (can add later)
         video: "",
-        website: "#",
+        website: "https://github.com/MarkRobertson67/sales_lead_funnel_analysis",
       },
     ],
   },
@@ -37,7 +38,7 @@ const projectCategories = [
           "Modeled and aggregated payroll time-series data to generate biweekly KPIs and export clean CSV reports.",
         techStack:
           "SQL | PostgreSQL (Neon) | Data Modeling | Aggregations | Reporting | CSV Exports | KPI Calculation",
-        screenshot: timecardappPic,
+        screenshot: "/DataAnalysis2.png",
         video: timecardVideo,
         website: "https://wcac-timecards-demo.netlify.app",
       },
