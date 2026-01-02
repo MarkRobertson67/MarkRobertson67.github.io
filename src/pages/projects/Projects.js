@@ -103,9 +103,9 @@ function Projects() {
         Projects
       </h2>
 
-      {/* <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
+      <div className="text-center mb-12 cursor-pointer" onClick={scrollToNext}>
         <p className="text-gray-500 dark:text-gray-300 text-lg flex flex-col items-center">
-          Data analysis projects coming soon.
+          Scroll to explore projects
           <span
             className="
         animate-bounce
@@ -120,9 +120,8 @@ function Projects() {
           >
             ↓
           </span>
-          Scroll to explore professional web apps
         </p>
-      </div> */}
+      </div>
 
       {projectCategories.map((category, idx) => (
         <div
