@@ -15,7 +15,7 @@ import studentdashboardVideo from "../../images/studentdashboardclip.mp4";
 
 const projectCategories = [
   {
-    category: "Data Analysis Projects",
+    category: "Data Analysis Projects - COMING SOON",
     projects: [
       {
         title: "Sales Lead Funnel Analysis",
