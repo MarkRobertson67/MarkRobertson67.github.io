@@ -74,9 +74,9 @@ The app will run at http://localhost:3000.
 
 ### To deploy this app to GitHub Pages:
 
-npm run build
+npm run deploy
 # or
-yarn build
+yarn deploy
 
 ### Deploy using GitHub Pages:
 
