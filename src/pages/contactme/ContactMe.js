@@ -21,19 +21,19 @@ function ContactMe() {
         (response) => {
           console.log("Contact alert email sent!", response.status, response.text);
           // After sending the alert, send the auto-reply email
-          emailjs
-            .send("service_nmgxjq9", "template_np119zb", formData, "Nvoo2xgtKqLWexhFd")
-            .then(
-              (response) => {
-                console.log("Auto-reply email sent!", response.status, response.text);
+          // emailjs
+          //   .send("service_nmgxjq9", "template_np119zb", formData, "Nvoo2xgtKqLWexhFd")
+          //   .then(
+          //     (response) => {
+          //       console.log("Auto-reply email sent!", response.status, response.text);
                 alert("Thank you for contacting me!");
                 setFormData({ name: "", email: "", message: "" });
-              },
-              (err) => {
-                console.error("Auto-reply FAILED...", err);
-                alert("There was an error sending the auto-reply. Please try again.");
-              }
-            );
+          //     },
+          //     (err) => {
+          //       console.error("Auto-reply FAILED...", err);
+          //       alert("There was an error sending the auto-reply. Please try again.");
+          //     }
+            // );
         },
         (err) => {
           console.error("Contact alert FAILED...", err);
