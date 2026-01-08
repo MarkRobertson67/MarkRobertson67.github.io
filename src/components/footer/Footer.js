@@ -41,7 +41,7 @@ function Footer() {
 
           {/* 2) Smaller text below */}
           <p className="text-[0.5rem]">
-            &copy; {new Date().getFullYear()} Mark Robertson. All rights reserved. Version 1.0.1
+            &copy; {new Date().getFullYear()} Mark Robertson. All rights reserved. Version 1.0.2
           </p>
         </div>
 
