@@ -12,19 +12,24 @@ import weatherappPic from "../../images/weatherapp.png";
 import weatherappVideo from "../../images/weatherappclip.mp4";
 import studentdashboardPic from "../../images/studentdashboard.png";
 import studentdashboardVideo from "../../images/studentdashboardclip.mp4";
+import salesleadfunnelanalysis from "../../images/dashboard_funnel_overview.png";
 
 const projectCategories = [
   {
-    category: "Data Analysis Projects - COMING SOON",
+    category: "Data Analysis Projects",
     projects: [
       {
         title: "Sales Lead Funnel Analysis",
         description:
-          "End-to-end analysis of a synthetic sales leads dataset to measure funnel conversion rates and identify drop-off points. Includes data cleaning, SQL aggregation, Excel validation, and an interactive Tableau dashboard to surface actionable sales insights.",
+          "End-to-end analysis of a synthetic sales leads dataset to measure funnel conversion rates and identify drop-off points. Includes data cleaning, SQL aggregation, Excel validation, and an interactive Tableau dashboard.",
         techStack: "SQL | Excel | Tableau | Data Cleaning | Funnel KPIs",
-        screenshot: "/DataAnalysis2.png",
-        video: "",
-        website: "https://github.com/MarkRobertson67/sales_lead_funnel_analysis",
+
+        screenshot: salesleadfunnelanalysis, // ✅ imported image
+        video: "", // ✅ REQUIRED (even if unused)
+
+        website:
+          "https://public.tableau.com/views/SalesLeadFunnelStageDistribution/Dashboard1?:showVizHome=no&:toolbar=no&:tabs=no",
+        repo: "https://github.com/MarkRobertson67/sales_lead_funnel_analysis",
       },
     ],
   },
