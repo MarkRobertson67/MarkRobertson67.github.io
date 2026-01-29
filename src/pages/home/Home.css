@@ -12,7 +12,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 75px;   /* ← adjust this */
+  margin-left: 55px;   /* ← adjust this */
   overflow: hidden;
 }
 
