@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.33b9f05a.css",
-    "main.js": "/static/js/main.0320eddb.js",
+    "main.js": "/static/js/main.72839ecc.js",
     "static/media/luxuryridesclip.mp4": "/static/media/luxuryridesclip.5ba5e104e338b5812283.mp4",
     "static/media/citywhispererclip.mp4": "/static/media/citywhispererclip.8fa8411ed43a499f6193.mp4",
     "static/media/weatherappclip.mp4": "/static/media/weatherappclip.26dee10776ac436b5c08.mp4",
@@ -10,6 +10,7 @@
     "static/media/citywhispererpic.png": "/static/media/citywhispererpic.c5ddb1f2862866ce3606.png",
     "static/media/timecardclip.mp4": "/static/media/timecardclip.926c6af5521e83f1f8a7.mp4",
     "static/media/timecardapp.png": "/static/media/timecardapp.a221d42f99b2d3445192.png",
+    "static/media/dashboard_funnel_overview.mp4": "/static/media/dashboard_funnel_overview.574cc330d489028fe956.mp4",
     "static/media/luxuryrides.png": "/static/media/luxuryrides.64e7511864d9f35020e4.png",
     "static/media/weatherapp.png": "/static/media/weatherapp.8668bdbc3856f473428a.png",
     "static/media/studentdashboard.png": "/static/media/studentdashboard.72e3a59b3d65263ff0ac.png",
@@ -17,10 +18,10 @@
     "static/media/ErrorNotFound.mp4": "/static/media/ErrorNotFound.59aecfead9ff8b7daf98.mp4",
     "index.html": "/index.html",
     "main.33b9f05a.css.map": "/static/css/main.33b9f05a.css.map",
-    "main.0320eddb.js.map": "/static/js/main.0320eddb.js.map"
+    "main.72839ecc.js.map": "/static/js/main.72839ecc.js.map"
   },
   "entrypoints": [
     "static/css/main.33b9f05a.css",
-    "static/js/main.0320eddb.js"
+    "static/js/main.72839ecc.js"
   ]
 }
