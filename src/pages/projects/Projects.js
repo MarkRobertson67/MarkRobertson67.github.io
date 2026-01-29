@@ -24,10 +24,8 @@ const projectCategories = [
         description:
           "End-to-end analysis of a synthetic sales leads dataset to measure funnel conversion rates and identify drop-off points. Includes data cleaning, SQL aggregation, Excel validation, and an interactive Tableau dashboard.",
         techStack: "SQL | Excel | Tableau | Data Cleaning | Funnel KPIs",
-
         screenshot: salesleadfunnelanalysis,
         video: salesleadfunnelanlysisVideo, 
-
         website:
           "https://public.tableau.com/views/SalesLeadFunnelStageDistribution/Dashboard1?:showVizHome=no&:toolbar=no&:tabs=no",
         repo: "https://github.com/MarkRobertson67/sales_lead_funnel_analysis",
@@ -46,6 +44,7 @@ const projectCategories = [
         screenshot: timecardappPic,
         video: timecardVideo,
         website: "https://wcac-timecards-demo.netlify.app",
+        repo: "https://github.com/MarkRobertson67/wcac_timecards_demo_frontend",
       },
       {
         title: "City Whisperer",
@@ -56,6 +55,7 @@ const projectCategories = [
         screenshot: citywhispererPic,
         video: citywhispererVideo,
         website: "https://citywhisperer-mark.netlify.app",
+        repo: "https://github.com/MarkRobertson67/9-4-capstone-team-6-my-version",
       },
     ],
   },
@@ -71,6 +71,7 @@ const projectCategories = [
         screenshot: luxuryridesPic,
         video: luxuryridesVideo,
         website: "https://myluxuryrides.netlify.app",
+        repo: "https://github.com/MarkRobertson67/fullstack-portfolio-project",
       },
       {
         title: "Student Dashboard",
@@ -81,6 +82,7 @@ const projectCategories = [
         screenshot: studentdashboardPic,
         video: studentdashboardVideo,
         website: "https://mystudent-dashboard.netlify.app",
+        repo: "https://github.com/MarkRobertson67/project-student-dashboard",
       },
       {
         title: "Weather App",
@@ -91,6 +93,7 @@ const projectCategories = [
         screenshot: weatherappPic,
         video: weatherappVideo,
         website: "https://marks-weather-app.netlify.app",
+        repo: "https://github.com/MarkRobertson67/MyWeatherApp",
       },
     ],
   },
