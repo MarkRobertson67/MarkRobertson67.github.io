@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0e0bb01.css",
+    "main.css": "/static/css/main.0dd7f036.css",
     "main.js": "/static/js/main.05df24c3.js",
     "static/media/luxuryridesclip.mp4": "/static/media/luxuryridesclip.5ba5e104e338b5812283.mp4",
     "static/media/citywhispererclip.mp4": "/static/media/citywhispererclip.8fa8411ed43a499f6193.mp4",
@@ -16,11 +16,11 @@
     "static/media/dashboard_funnel_overview.png": "/static/media/dashboard_funnel_overview.c4c5c4af9f670563b8a5.png",
     "static/media/ErrorNotFound.mp4": "/static/media/ErrorNotFound.59aecfead9ff8b7daf98.mp4",
     "index.html": "/index.html",
-    "main.b0e0bb01.css.map": "/static/css/main.b0e0bb01.css.map",
+    "main.0dd7f036.css.map": "/static/css/main.0dd7f036.css.map",
     "main.05df24c3.js.map": "/static/js/main.05df24c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0e0bb01.css",
+    "static/css/main.0dd7f036.css",
     "static/js/main.05df24c3.js"
   ]
 }
