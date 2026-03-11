@@ -14,6 +14,7 @@ import studentdashboardPic from "../../images/studentdashboard.png";
 import studentdashboardVideo from "../../images/studentdashboardclip.mp4";
 import salesleadfunnelanalysis from "../../images/dashboard_funnel_overview.png";
 import salesleadfunnelanlysisVideo from "../../images/dashboard_funnel_overview.mp4";
+import customerBehaviorPic from "../../images/customer_behavior_dashboard.png";
 
 const projectCategories = [
   {
@@ -28,8 +29,22 @@ const projectCategories = [
         video: salesleadfunnelanlysisVideo, 
         website:
           "https://public.tableau.com/views/SalesLeadFunnelStageDistribution/Dashboard1?:showVizHome=no&:toolbar=no&:tabs=no",
+          websiteLabel: "View Live Dashboard",
         repo: "https://github.com/MarkRobertson67/sales_lead_funnel_analysis",
       },
+      {
+  title: "Customer Purchase Behavior Analysis",
+  description:
+    "Built an end-to-end analytics project by cleaning retail customer data with Python, analyzing business questions in SQL, and designing a Power BI dashboard to highlight revenue, discounts, and customer behavior trends.",
+  techStack:
+    "Python | Pandas | SQL | Power BI | Data Cleaning | Business Analytics",
+  screenshot: customerBehaviorPic,
+  video: null,
+  website:
+    "https://github.com/MarkRobertson67/Customer_Behavior_Analysis/blob/main/dashboard/customer_behavior_dashboard.pbix",
+    websiteLabel: "Download Dashboard (.pbix)",
+  repo: "https://github.com/MarkRobertson67/Customer_Behavior_Analysis",
+},
     ],
   },
   {

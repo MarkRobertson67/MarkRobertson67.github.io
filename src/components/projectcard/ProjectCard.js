@@ -76,8 +76,10 @@ function ProjectCard({ project }) {
       <div className="mt-2 flex gap-4 text-sm font-semibold">
         {/* This is just label text because the entire card is already the link */}
         {project.website && (
-          <span className="text-blue-600 hover:underline">View Live Site</span>
-        )}
+      <span className="text-blue-600 hover:underline">
+       {project.websiteLabel || "View Live Site"}
+      </span>
+      )}
 
         {/* Repo link: must stop navigation + not open the website */}
         {project.repo && (
